@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 
+  1.绝对定位
+  2.flex布局
+  3.浮动
+  4.table
+  5.graid布局
+ -->
+
+<body>
+  <!-- 绝对定位 -->
+  <section>
+    <style>
+      .lcr div {
+        height: 100px;
+      }
+
+      .lcr .left {
+        width: 300px;
+        background-color: aqua;
+        position: absolute;
+        left: 0;
+      }
+
+      .lcr .center {
+        background-color: antiquewhite;
+        position: absolute;
+        left: 300px;
+        right: 300px;
+      }
+
+      .lcr .right {
+        width: 300px;
+        background-color: rgb(106, 0, 255);
+        position: absolute;
+        right: 0;
+      }
+    </style>
+    <div class="lcr">
+      <div class="left">1</div>
+      <div class="center">2</div>
+      <div class="right">3</div>
+    </div>
+  </section>
+</body>
+
+</html>

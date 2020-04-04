@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+    层级关系
+    table->多个table-row->1对多个tab-cell
+   -->
+  <style>
+    .lcr {
+      display: table;
+      width: 100%;
+    }
+
+    .lcr div {
+      height: 100px;
+      display: table-column;
+    }
+
+    .left {
+      width: 300px;
+      background-color: antiquewhite;
+    }
+
+    .center {
+      background-color: aqua;
+    }
+
+    .right {
+      width: 300px;
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="lcr">
+    <div class="left">1</div>
+    <div class="center">2</div>
+    <div class="right">3</div>
+  </div>
+</body>
+
+</html>

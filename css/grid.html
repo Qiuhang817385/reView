@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+    容器子元素（项目）的float、display: inline-block、display: table-cell、vertical-align和column-*等设置都将失效
+
+    repeat()接受两个参数，第一个参数是重复的次数（上例是3），第二个参数是所要重复的值。
+
+    grid-template-columns: repeat(2, 100px 20px 80px);
+上面代码定义了6列，第一列和第四列的宽度为100px，第二列和第五列为20px，第三列和第六列为80px。
+
+（2）auto-fill 关键字
+
+有时，单元格的大小是固定的，但是容器的大小不确定。如果希望每一行（或每一列）容纳尽可能多的单元格，这时可以使用auto-fill关键字表示自动填充。
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+
+为了方便表示比例关系，网格布局提供了fr关键字（fraction 的缩写，意为"片段"）。如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+传统的十二网格布局，写起来也很容易。
+
+
+grid-template-columns: repeat(12, 1fr);
+
+     */
+    .grid-wrap {
+      display: grid;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
+    }
+
+    .cell {
+      height: 100px;
+      width: 100px;
+    }
+
+    .cell-1 {
+      background-color: #f3a322;
+    }
+
+    .cell-2 {
+      background-color: #123456;
+    }
+
+    .cell-3 {
+      background-color: #7facd9;
+    }
+
+    .cell-4 {
+      background-color: #45f631;
+    }
+
+    .cell-5 {
+      background-color: #4b5612;
+    }
+
+    .cell-6 {
+      background-color: #d41a1a;
+    }
+
+    .cell-7 {
+      background-color: #ff1d43;
+    }
+
+    .cell-8 {
+      background-color: #c9e01a;
+    }
+
+    .cell-9 {
+      background-color: #f1ce50;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-wrap">
+    <div class="cell cell-1">1</div>
+    <div class="cell cell-2">2</div>
+    <div class="cell cell-3">3</div>
+    <div class="cell cell-4">4</div>
+    <div class="cell cell-5">5</div>
+    <div class="cell cell-6">6</div>
+    <div class="cell cell-7">7</div>
+    <div class="cell cell-8">8</div>
+    <div class="cell cell-9">9</div>
+  </div>
+  <!-- @加@的话是从6开始 -->
+
+</body>
+
+</html>
